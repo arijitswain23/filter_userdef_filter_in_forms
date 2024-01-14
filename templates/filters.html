@@ -1,0 +1,29 @@
+{% load usdfilter %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>filters</title>
+</head>
+<body>
+    <center>
+        <h1>Filters</h1>
+        <h1>{{Data}}</h1>
+        <h1>{{Data|lower}}</h1>
+        <h1>{{Data|upper}}</h1>
+        <h1>{{Data|title}}</h1>
+        <h1>{{Data|capfirst}}</h1>
+        <h1>{{Data|length}}</h1>
+        <h1>{{Data|truncatechars:'2'}}</h1>
+        <h1>{{Data|truncatewords:'2'}}</h1>
+        <h1>{{dt}}</h1>
+        <h1>{{dt|date:'Y'}}</h1>
+        <h1>I have {{c}} Cat{{c|pluralize}}</h1>
+        <h1>I have {{c}} Mango{{c|pluralize}}</h1>
+        <h1>I have {{c}} {{c|pluralize:'is,are'}} Mango</h1>
+        <h1>{{Data|swapping}}</h1>
+        <h1>{{Data|removing:'s'}}</h1>
+        <h1>{{Data|counting:'e'}}</h1>
+
+    </center>
+</body>
+</html>
